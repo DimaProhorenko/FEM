@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+      url("./fonts/Poppins-Regular.ttf");
+  }
+  
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  :root {
+    font-size: 10px;
+    --primary-color: hsl(259, 100%, 65%);
+    --secondary-color: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+
+    --max-width: 1440px;
+  }
+
+  body {
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    background-color: var(--light-grey);
+  }
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+}
+
+  .container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+  }
+
+  .ac {
+    max-width: 38rem;
+    margin-inline: auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    border-bottom-right-radius: 10rem;
+  }
+
+  .ac__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block-end: 4rem;
+  }
+
+  .form__group {
+    flex: 1;
+  }
+
+  .form__label {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--smokey-grey);
+
+    display: block;
+    margin-block-end: .5rem;
+  }
+
+  .form input {
+    border: 1px solid var(--smokey-grey);
+    outline: none;
+
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: .5rem;
+  }
+
+  .ac__bot {
+    border-top: 1px solid var(--smokey-grey);
+    padding-block-start: 4rem;
+    position: relative;
+  }
+
+  .ac__arrow {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  .ac__arrow img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .ac__info {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .ac__info span {
+    color: var(--primary-color);
+    font-size: 1.2em;
+  }
