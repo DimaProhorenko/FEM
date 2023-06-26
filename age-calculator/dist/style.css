@@ -25,6 +25,7 @@
     --off-black: hsl(0, 0%, 8%);
 
     --max-width: 1440px;
+    --submit-size: 5rem;
   }
 
   body {
@@ -62,8 +63,13 @@ input {
   .ac__form {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-block-end: 4rem;
+    border-bottom: 1px solid var(--smokey-grey);
+    position: relative;
+    padding-block-end: 6rem;
+    margin-block-end: 3rem;
+    
   }
 
   .form__group {
@@ -91,35 +97,57 @@ input {
     border-radius: .5rem;
   }
 
-  .ac__bot {
-    border-top: 1px solid var(--smokey-grey);
-    padding-block-start: 4rem;
-    position: relative;
-  }
 
-  .ac__arrow {
-    width: 5rem;
-    height: 5rem;
+  .form__submit {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 6rem;
+    height: 6rem;
     padding: 1rem;
     border-radius: 50%;
     background-color: var(--primary-color);
+    overflow: hidden;
+
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    translate: -50% 50%;
   }
 
-  .ac__arrow img {
+  .form__submit img {
     width: 100%;
     object-fit: cover;
   }
+  
 
-  .ac__info {
-    font-size: 4rem;
-    font-weight: 800;
-  }
+.form--error input {
+  border-color: var(--secondary-color);
+}
 
-  .ac__info span {
-    color: var(--primary-color);
-    font-size: 1.2em;
-  }
+.form--error .form__label {
+  color: var(--secondary-color);
+}
+
+.form__error-block {
+  width: 100%;
+  display: block;
+  font-size: .8em;
+  color: var(--secondary-color);
+}
+
+.ac__arrow img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.ac__info {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.ac__info span {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}

@@ -21,25 +21,25 @@
         <div class="ac">
           <form class="ac__form form">
               <div class="form__group">
-                <label for="#day" class="form__label">day</label>
-                <input type="number" name="day" id="day">
+                <label for="day" class="form__label">day</label>
+                <input type="number" name="day" id="day" required>
               </div>
               <div class="form__group">
-                <label for="#month" class="form__label">month</label>
-                <input type="number" name="month" id="month">
+                <label for="month" class="form__label">month</label>
+                <input type="number" name="month" id="month" required>
               </div>
               <div class="form__group">
-                <label for="#year" class="form__label">year</label>
-                <input type="number" name="year" id="year">
+                <label for="year" class="form__label">year</label>
+                <input type="number" name="year" id="year" required>
               </div>
+                <button class="form__submit">
+                  <img src="./assets/images/icon-arrow.svg" alt="">
+                </button>
           </form>
           <div class="ac__bot">
-            <div class="ac__arrow">
-              <img src="./assets/images/icon-arrow.svg" alt="">
-            </div>
-            <h2 class="ac__info"><span id="day-info">38</span> years</h2>
-            <h2 class="ac__info"><span id="month-info">02</span> month</h2>
-            <h2 class="ac__info"><span id="year-info">26</span> days</h2>
+            <h2 class="ac__info"><span id="year-info">--</span> years</h2>
+            <h2 class="ac__info"><span id="month-info">--</span> month</h2>
+            <h2 class="ac__info"><span id="day-info">--</span> days</h2>
           </div>
         </div>
       </div>
@@ -49,5 +49,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
